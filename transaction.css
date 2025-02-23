@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
+
+/*font-family: 'Montserrat', sans-serif;*/
+:root {
+    --theme1: rgb(25, 181, 192);
+}
+
+body {
+    padding: 0;
+
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 1px 1px 50px -1px gray;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+header {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+}
+
+header img {
+    position: absolute;
+    z-index: 0;
+    left: 10%;
+    top: 40px;
+
+}
+
+
+.pagetitle {
+    text-align: center;
+    background-color: rgb(25, 181, 192);
+    
+    width: 95%;
+    margin: 0 auto;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.details {
+    background-color: var(--theme1);
+    width: 95%;
+    margin: auto;
+    padding: 0;
+
+}
+
+.details table {
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.details table .amounts {
+    background-color: rgb(241, 241, 241);
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.details table .amounts p {
+    height: 0px;
+}
+
+.actions {
+    background-color: var(--theme1);
+    display: inline-flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0px;
+
+}
+
+.actions button, .actionBtn {
+    width: 120px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.actions button:hover {
+    background-color: var(--theme1);
+    color: white;
+}
+
+.action {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    width: 50%;
+    background-color: rgb(0, 126, 245);
+    transform: translateX(20%);
+    top: 100px;
+    padding: 20px;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 20px 5px black;
+}
+
+.action table {
+    width: 100%;
+    font-size: 24px;
+}
+
+.action table input {
+    width: 100%;
+    font-size: 24px;
+}
+
+.action table button {
+    width: 120px;
+    padding: 5px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.dataTable {
+    overflow-y: scroll;
+    overflow-x: auto;
+    max-height: 300px;
+    width: 95%;
+    margin: 0 auto;
+    border: 2px solid gray;
+    padding: 0;
+
+}
+
+.dataTable::-webkit-scrollbar {
+    display: none;
+}
+
+.dataTable table {
+
+    margin: 0 auto;
+    border: 1px solid black;
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.dataTable table thead {
+    position: sticky;
+    top: -1px;
+    background-color: var(--theme1);
+    color: white;
+
+}
+
+.dataTable table th,
+.dataTable table td {
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0.5px solid black;
+    padding: 5px;
+
+}
+
+
+
+.searchbar {
+    display: inline-flex;
+    justify-content: space-around;
+    width: 92%;
+    
+    text-align: center;
+    margin: 0 auto;
+   
+
+}
+
+.searchbar input {
+    width: 400px;
+    padding: 5px;
+}
+
+.searchbar #searchlist {
+    display: none;
+    background-color: wheat;
+    position: absolute;
+    transform: translate(35%, 10%);
+    padding: 10px;
+    max-height: 150px;
+    overflow: auto;
+    list-style: none;
+    text-align: left;
+    z-index: 1;
+
+}
+
+.searchbar ul li {
+    text-align: left;
+    width: 380px;
+}
+
+.searchbar ul li:hover {
+    background-color: var(--theme1);
+    color: white;
+    cursor: pointer;
+}
+
+.tableinfo
+{
+    display: inline-flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 95%;
+    margin:0 auto;
+    background-color: lightblue;
+    padding: 10px 0;
+}
+
+
+@media screen and (max-width: 600px) {
+    body {
+        width: 99%;
+        font-size: 13px;
+        margin: auto;
+    }
+
+    .container {
+        width: 99%;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    header {
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .title {
+
+        width: 50%;
+        padding: 0 0;
+        margin: auto;
+    }
+
+    .pagetitle {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .details table .amounts {
+        width: 80px;
+        height: 80px;
+    }
+    .actions button {
+        width: 100px;
+        padding: 5px;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+
+    .action
+    {
+        width: 85%;
+        transform: translateX(0%);
+        top: 20px;
+    }
+    .action table {
+        
+        font-size: 18px;
+    }
+    
+    .action table input {
+       
+        font-size: 18px;
+    }
+
+    .dataTable {
+        overflow:hidden;
+        overflow-y: auto;
+    }
+
+    .addPro {
+        width: 98%;
+        margin: 0 auto;
+        background-color: var(--theme1);
+
+        color: white;
+        padding: 0;
+    }
+
+    .searchbar #searchlist {
+        display: block;
+        transform: translate(20%, 15%);
+    }
+
+    .searchbar ul li {
+        text-align: left;
+        width: 280px;
+    }
+}

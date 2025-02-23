@@ -1,0 +1,7 @@
+error codes belongs to new distributer list generating
+
+111 All fields are mendatory when adding a product 
+
+112 cann't add product to current table
+
+113 Faild to update in product list 

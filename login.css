@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic&display=swap');
+/* for title  font-family: 'Antic', sans-serif; */
+:root
+{
+    --theme1: rgb(25, 181, 192);
+  
+}
+
+/* Header starts here */
+
+body
+{
+    padding: 0;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+header{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    
+}
+header img
+{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 73%;
+}
+header h1
+{
+    font-family: 'Antic', sans-serif;
+    color: var(--theme1);
+}
+
+/* Container starts here */
+.container 
+{
+    width: 100%;
+   overflow: hidden ;
+}
+
+
+
+
+/* Container ends here */
+
+/* Contents starts here the main purpose is to set background function image */
+.contents
+{
+ width: 100%;
+ background-image: url("");
+ background-position:120px;
+ background-repeat: no-repeat;
+ height: 500px;
+
+ text-align: center;
+ font-family: 'Antic', sans-serif;
+ overflow: hidden;
+}
+
+/* data starts here, container/containent/data */
+.data 
+{
+    background-color: var(--theme1);
+    padding: 40px 0;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+/* Error in login message starts here */
+.error
+{
+    width: 60%;
+    background-color: rgba(255, 0, 0, 0.863);
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Antic', sans-serif;
+    color: white;
+    display: none;
+    padding: 10px;
+    animation: disappear 7s 1;
+    position: absolute;
+    left: 18%;
+}
+@keyframes disappear {
+    to 
+    {
+        opacity: 0;
+    }
+}
+
+/* Form starts here container/containent/data/form */
+.data form 
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap:20px;
+    text-align: center;
+    width: 100%;
+    font-family: 'Antic', sans-serif;
+   
+}
+form h1
+{
+    color: white;
+    font-family: 'Antic', sans-serif;
+}
+.inputs 
+{
+    
+    width: 70%;
+    color: white;
+    display: inline-flex;
+    padding: 0 20px;
+    margin: 0 auto;
+
+}
+
+.inputs i
+{
+    text-align: left;
+    width: 20%;
+    font-size: 20px;
+    
+}
+.inputs input
+{
+    text-align: left;
+    width: 80%;
+    font-size: 16px;
+    padding:2px;
+    font-family: 'Antic', sans-serif;
+    
+}
+#loginBtn 
+{
+    
+    padding: 5px;
+    text-align: center;
+    
+    width:100%;
+    font-size: 20px;
+    border-radius: 5px;
+
+    background-color: white;
+    color: rgb(0, 126, 245);
+    cursor: pointer;
+}
+#loginBtn:hover
+{
+     color: white;
+     background-color: rgb(0, 126, 245);
+}
+
+@media screen and (max-width:500px) {
+    body
+    {
+        width: 100vw;
+        margin: 0 auto;
+    }
+    header
+    {
+        width: 90%;
+        margin: 0 auto;
+        
+        padding: 5px 20px ;
+    }
+    header img
+    {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 80%;
+    top:20px;
+    }
+    .contents
+    {
+        background-image: url("/images/lock.png");
+        background-position: 100px;
+        background-repeat: no-repeat;
+    }
+    
+}
